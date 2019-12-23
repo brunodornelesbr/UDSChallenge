@@ -8,6 +8,7 @@ target 'UDSChallenge' do
   # Pods for UDSChallenge
  pod 'RxSwift'
  pod 'RxCocoa'
+ pod 'IQKeyboardManagerSwift'
   target 'UDSChallengeTests' do
     inherit! :search_paths
     # Pods for testing
