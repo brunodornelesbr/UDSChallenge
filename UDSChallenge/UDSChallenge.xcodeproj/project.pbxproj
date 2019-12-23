@@ -14,7 +14,7 @@
 		9ABA641F23AFB41E00C08990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABA641D23AFB41E00C08990 /* Main.storyboard */; };
 		9ABA642123AFB42200C08990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ABA642023AFB42200C08990 /* Assets.xcassets */; };
 		9ABA642423AFB42200C08990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABA642223AFB42200C08990 /* LaunchScreen.storyboard */; };
-		9ABA642F23AFB42200C08990 /* UDSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA642E23AFB42200C08990 /* UDSChallengeTests.swift */; };
+		9ABA642F23AFB42200C08990 /* LoginViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA642E23AFB42200C08990 /* LoginViewModelSpec.swift */; };
 		9ABA643B23AFB7A500C08990 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABA643A23AFB7A500C08990 /* Login.storyboard */; };
 		9ABA643E23AFBA8500C08990 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA643D23AFBA8500C08990 /* LoginViewController.swift */; };
 		9ABA644123AFBD2200C08990 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA644023AFBD2200C08990 /* LoginViewModel.swift */; };
@@ -39,6 +39,8 @@
 		9ABA646923B0B3B100C08990 /* RulingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA646823B0B3B100C08990 /* RulingTableViewCell.swift */; };
 		9ABA646B23B0B4B200C08990 /* RulingVisualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA646A23B0B4B200C08990 /* RulingVisualizerViewController.swift */; };
 		9ABA646D23B0B53C00C08990 /* RulingVisualizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA646C23B0B53C00C08990 /* RulingVisualizerViewModel.swift */; };
+		9ABA647023B0D5F500C08990 /* RouterStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA646F23B0D5F500C08990 /* RouterStub.swift */; };
+		9ABA647223B0D9CE00C08990 /* RouterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA647123B0D9CE00C08990 /* RouterSpec.swift */; };
 		CD87C0852744DFB52C26C56E /* Pods_UDSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA3F583FBEA3B1B56A28F82 /* Pods_UDSChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +67,7 @@
 		9ABA642323AFB42200C08990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ABA642523AFB42200C08990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ABA642A23AFB42200C08990 /* UDSChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UDSChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9ABA642E23AFB42200C08990 /* UDSChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDSChallengeTests.swift; sourceTree = "<group>"; };
+		9ABA642E23AFB42200C08990 /* LoginViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelSpec.swift; sourceTree = "<group>"; };
 		9ABA643023AFB42200C08990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ABA643A23AFB7A500C08990 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		9ABA643D23AFBA8500C08990 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,8 @@
 		9ABA646823B0B3B100C08990 /* RulingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulingTableViewCell.swift; sourceTree = "<group>"; };
 		9ABA646A23B0B4B200C08990 /* RulingVisualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulingVisualizerViewController.swift; sourceTree = "<group>"; };
 		9ABA646C23B0B53C00C08990 /* RulingVisualizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulingVisualizerViewModel.swift; sourceTree = "<group>"; };
+		9ABA646F23B0D5F500C08990 /* RouterStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterStub.swift; sourceTree = "<group>"; };
+		9ABA647123B0D9CE00C08990 /* RouterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSpec.swift; sourceTree = "<group>"; };
 		AD1531BCE0322078CC50B685 /* Pods-UDSChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDSChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-UDSChallengeTests/Pods-UDSChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2053B1E270722CECDAB840D /* Pods-UDSChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDSChallenge.debug.xcconfig"; path = "Target Support Files/Pods-UDSChallenge/Pods-UDSChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		C7F06FC722A374CF179DB621 /* Pods-UDSChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDSChallenge.release.xcconfig"; path = "Target Support Files/Pods-UDSChallenge/Pods-UDSChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,7 +170,9 @@
 		9ABA642D23AFB42200C08990 /* UDSChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				9ABA642E23AFB42200C08990 /* UDSChallengeTests.swift */,
+				9ABA646E23B0D5DA00C08990 /* Stub */,
+				9ABA642E23AFB42200C08990 /* LoginViewModelSpec.swift */,
+				9ABA647123B0D9CE00C08990 /* RouterSpec.swift */,
 				9ABA643023AFB42200C08990 /* Info.plist */,
 			);
 			path = UDSChallengeTests;
@@ -234,6 +240,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9ABA646E23B0D5DA00C08990 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				9ABA646F23B0D5F500C08990 /* RouterStub.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
 		FE73704ECEA15281B1A5F2E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +287,7 @@
 				9ABA642623AFB42200C08990 /* Sources */,
 				9ABA642723AFB42200C08990 /* Frameworks */,
 				9ABA642823AFB42200C08990 /* Resources */,
+				1D5E9485E7D3797735F73C0C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,6 +364,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D5E9485E7D3797735F73C0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UDSChallengeTests/Pods-UDSChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UDSChallengeTests/Pods-UDSChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UDSChallengeTests/Pods-UDSChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2CF39F94A88A340B808ADBBE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,7 +477,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ABA642F23AFB42200C08990 /* UDSChallengeTests.swift in Sources */,
+				9ABA647223B0D9CE00C08990 /* RouterSpec.swift in Sources */,
+				9ABA647023B0D5F500C08990 /* RouterStub.swift in Sources */,
+				9ABA642F23AFB42200C08990 /* LoginViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
