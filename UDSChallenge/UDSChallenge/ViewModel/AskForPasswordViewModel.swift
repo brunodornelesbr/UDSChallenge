@@ -13,11 +13,7 @@ class AskForPasswordViewModel: BaseViewModel {
      var email = BehaviorRelay<String>(value : "")
     var didAskForPassword = BehaviorRelay<Bool>(value: false)
     var network = NetworkMock()
-     weak var router : Router?
-       init(router : Router) {
-            super.init()
-           self.router = router
-    }
+
     
     func send() {
         guard email.value != "" else {

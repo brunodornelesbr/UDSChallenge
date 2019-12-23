@@ -15,6 +15,7 @@ class UserManager {
         case email
         case password
         case name
+        case rulingList
     }
     
     func isUserLoggedIn()->Bool {
@@ -25,6 +26,23 @@ class UserManager {
         UserDefaults.standard.set(logged, forKey: UserManager.keys.userLogged.rawValue)
     }
     
+    func getUserName()->String{
+       return UserDefaults.standard.string(forKey: UserManager.keys.name.rawValue) ?? ""
+    }
+    
+    func saveRuling(ruling : Ruling) {
+        var rulings = getRulingList()
+        rulings.append(ruling)
+       let data = try? JSONEncoder().encode(rulings)
+          UserDefaults.standard.set(data, forKey: UserManager.keys.rulingList.rawValue)
+    }
+    
+    func getRulingList() -> [Ruling] {
+       
+        guard let rulingData = UserDefaults.standard.data(forKey: UserManager.keys.rulingList.rawValue) else { return [] }
+           return (try? JSONDecoder().decode([Ruling].self, from: rulingData)) ?? []
+        
+    }
     func logIn(email : String,password : String, completion : @escaping ((Bool)->())) {
         network.logIn(email: email, password: password){
             email,name,password in
@@ -51,3 +69,4 @@ class UserManager {
         }
     }
 }
+

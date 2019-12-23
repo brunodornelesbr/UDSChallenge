@@ -15,11 +15,7 @@ class SignUpViewModel : BaseViewModel {
     var name = BehaviorRelay<String>(value : "")
     var didRegister = BehaviorRelay<Bool>(value: false)
     var userManager = UserManager()
-       weak var router : Router?
-       init(router : Router) {
-            super.init()
-           self.router = router
-    }
+    
     
     func register() {
         guard email.value != "" && password.value != "" && name.value != "" else {

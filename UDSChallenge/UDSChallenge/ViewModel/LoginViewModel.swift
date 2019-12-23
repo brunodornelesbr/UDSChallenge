@@ -13,10 +13,7 @@ class LoginViewModel : BaseViewModel {
     var email = BehaviorRelay<String>(value : "")
     var password = BehaviorRelay<String>(value : "")
     var userManager = UserManager()
-    weak var router : Router?
-    init(router : Router) {
-        self.router = router
-    }
+
     func doLogin() {
         guard email.value != "" && password.value != "" else {
             self.showError(error: "Digite o email e senha")
