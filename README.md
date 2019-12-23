@@ -1,1 +1,3 @@
 # UDSChallenge
+
+Projeto utiliza cocoapods.
