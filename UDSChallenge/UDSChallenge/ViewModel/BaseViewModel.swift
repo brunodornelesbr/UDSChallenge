@@ -15,4 +15,9 @@ class BaseViewModel {
     func showError(error : String) {
         errorToBeShow.accept(error)
     }
+    
+    weak var router : Router?
+          init(router : Router) {
+              self.router = router
+       }
 }

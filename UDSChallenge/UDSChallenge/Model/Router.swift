@@ -27,7 +27,12 @@ class Router {
         addViewControllerToNavigation(vc: loginVc)
        }
     func routeToMain() {
-        
+        let mainVc = instantiateInitialVCFromStoryboard(storyboardName: "Main") as! UITabBarController
+        let rulingCreation = instantiateInitialVCFromStoryboard(storyboardName: "RulingCreation") as! RulingCreationViewController
+        rulingCreation.model = RulingCreationViewModel(router: self)
+        mainVc.setViewControllers([rulingCreation], animated: false)
+        navigationController.setNavigationBarHidden(true, animated: false)
+        addViewControllerToNavigation(vc: mainVc)
     }
     
     func routeToAskForPassword() {
