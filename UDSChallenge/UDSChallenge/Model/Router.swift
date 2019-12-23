@@ -13,13 +13,11 @@ class Router {
     init(){
            navigationController = UINavigationController()
             let userManager = UserManager()
-//        if userManager.isUserLoggedIn(){
-//            routeToMain()
-//        } else {
-//           routeToLogin()
-//        }
-        
-        routeToLogin()
+        if userManager.isUserLoggedIn(){
+            routeToMain()
+        } else {
+           routeToLogin()
+        }
     }
     func routeToLogin() {
            let loginVc = instantiateInitialVCFromStoryboard(storyboardName: "Login") as! LoginViewController
@@ -28,9 +26,14 @@ class Router {
        }
     func routeToMain() {
         let mainVc = instantiateInitialVCFromStoryboard(storyboardName: "Main") as! UITabBarController
+        
         let rulingCreation = instantiateInitialVCFromStoryboard(storyboardName: "RulingCreation") as! RulingCreationViewController
         rulingCreation.model = RulingCreationViewModel(router: self)
-        mainVc.setViewControllers([rulingCreation], animated: false)
+        
+        let profile = instantiateInitialVCFromStoryboard(storyboardName: "Profile") as! ProfileViewController
+        profile.model = ProfileViewModel(router: self)
+        
+        mainVc.setViewControllers([rulingCreation,profile], animated: false)
         navigationController.setNavigationBarHidden(true, animated: false)
         addViewControllerToNavigation(vc: mainVc)
     }
@@ -45,6 +48,11 @@ class Router {
         let registerVc = instantiateInitialVCFromStoryboard(storyboardName: "SignUp") as! SignUpViewController
         registerVc.model = SignUpViewModel(router: self)
         addViewControllerToNavigation(vc: registerVc)
+    }
+    
+    func logout() {
+        navigationController.popToRootViewController(animated: true)
+        navigationController.setNavigationBarHidden(false, animated: true)
     }
     //MARK:- Helper methods
       func addViewControllerToNavigation(vc : UIViewController) {

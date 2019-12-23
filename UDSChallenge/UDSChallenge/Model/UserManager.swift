@@ -26,8 +26,16 @@ class UserManager {
         UserDefaults.standard.set(logged, forKey: UserManager.keys.userLogged.rawValue)
     }
     
+    func logout() {
+        setUserLoggedIn(logged: false)
+        wipeRuling()
+    }
+    
     func getUserName()->String{
        return UserDefaults.standard.string(forKey: UserManager.keys.name.rawValue) ?? ""
+    }
+    func getEmail()->String{
+        return UserDefaults.standard.string(forKey: UserManager.keys.email.rawValue) ?? ""
     }
     
     func saveRuling(ruling : Ruling) {
@@ -42,6 +50,12 @@ class UserManager {
         guard let rulingData = UserDefaults.standard.data(forKey: UserManager.keys.rulingList.rawValue) else { return [] }
            return (try? JSONDecoder().decode([Ruling].self, from: rulingData)) ?? []
         
+    }
+    
+    func wipeRuling() {
+        let rulings = [Ruling]()
+        let data = try? JSONEncoder().encode(rulings)
+                UserDefaults.standard.set(data, forKey: UserManager.keys.rulingList.rawValue)
     }
     func logIn(email : String,password : String, completion : @escaping ((Bool)->())) {
         network.logIn(email: email, password: password){
