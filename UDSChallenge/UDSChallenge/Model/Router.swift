@@ -13,10 +13,9 @@ class Router {
     init(){
            navigationController = UINavigationController()
             let userManager = UserManager()
+          routeToLogin()
         if userManager.isUserLoggedIn(){
             routeToMain()
-        } else {
-           routeToLogin()
         }
     }
     func routeToLogin() {
@@ -33,7 +32,10 @@ class Router {
         let profile = instantiateInitialVCFromStoryboard(storyboardName: "Profile") as! ProfileViewController
         profile.model = ProfileViewModel(router: self)
         
-        mainVc.setViewControllers([rulingCreation,profile], animated: false)
+        let rulingVisualizer = instantiateInitialVCFromStoryboard(storyboardName: "RulingVisualizer") as! RulingVisualizerViewController
+        rulingVisualizer.model = RulingVisualizerViewModel(router: self)
+        
+        mainVc.setViewControllers([rulingVisualizer,rulingCreation,profile], animated: false)
         navigationController.setNavigationBarHidden(true, animated: false)
         addViewControllerToNavigation(vc: mainVc)
     }

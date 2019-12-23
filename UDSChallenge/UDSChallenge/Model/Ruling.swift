@@ -8,10 +8,15 @@
 
 import UIKit
 
-class Ruling : Codable{
+class Ruling : Codable,Equatable{
 var title = ""
 var description = ""
 var author = ""
 var details = ""
-var open = true 
+var open = 0
+    
+    static func == (lhs: Ruling, rhs: Ruling) -> Bool {
+          return (lhs.title == rhs.title) && (lhs.details == rhs.details) && (lhs.author == rhs.author) && (lhs.description == rhs.description)
+      }
+      
 }

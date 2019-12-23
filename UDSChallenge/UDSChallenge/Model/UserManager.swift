@@ -52,6 +52,12 @@ class UserManager {
         
     }
     
+    func updateRulings(rulings : [Ruling]) {
+        wipeRuling()
+        let data = try? JSONEncoder().encode(rulings)
+                UserDefaults.standard.set(data, forKey: UserManager.keys.rulingList.rawValue)
+    }
+    
     func wipeRuling() {
         let rulings = [Ruling]()
         let data = try? JSONEncoder().encode(rulings)

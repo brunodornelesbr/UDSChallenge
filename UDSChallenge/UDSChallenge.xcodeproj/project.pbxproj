@@ -35,6 +35,10 @@
 		9ABA646023B08BB000C08990 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABA645F23B08BB000C08990 /* Profile.storyboard */; };
 		9ABA646223B08D1300C08990 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA646123B08D1300C08990 /* ProfileViewController.swift */; };
 		9ABA646423B08D4300C08990 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA646323B08D4300C08990 /* ProfileViewModel.swift */; };
+		9ABA646623B0921300C08990 /* RulingVisualizer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABA646523B0921300C08990 /* RulingVisualizer.storyboard */; };
+		9ABA646923B0B3B100C08990 /* RulingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA646823B0B3B100C08990 /* RulingTableViewCell.swift */; };
+		9ABA646B23B0B4B200C08990 /* RulingVisualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA646A23B0B4B200C08990 /* RulingVisualizerViewController.swift */; };
+		9ABA646D23B0B53C00C08990 /* RulingVisualizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA646C23B0B53C00C08990 /* RulingVisualizerViewModel.swift */; };
 		CD87C0852744DFB52C26C56E /* Pods_UDSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA3F583FBEA3B1B56A28F82 /* Pods_UDSChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +87,10 @@
 		9ABA645F23B08BB000C08990 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		9ABA646123B08D1300C08990 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9ABA646323B08D4300C08990 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		9ABA646523B0921300C08990 /* RulingVisualizer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RulingVisualizer.storyboard; sourceTree = "<group>"; };
+		9ABA646823B0B3B100C08990 /* RulingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulingTableViewCell.swift; sourceTree = "<group>"; };
+		9ABA646A23B0B4B200C08990 /* RulingVisualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulingVisualizerViewController.swift; sourceTree = "<group>"; };
+		9ABA646C23B0B53C00C08990 /* RulingVisualizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulingVisualizerViewModel.swift; sourceTree = "<group>"; };
 		AD1531BCE0322078CC50B685 /* Pods-UDSChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDSChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-UDSChallengeTests/Pods-UDSChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2053B1E270722CECDAB840D /* Pods-UDSChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDSChallenge.debug.xcconfig"; path = "Target Support Files/Pods-UDSChallenge/Pods-UDSChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		C7F06FC722A374CF179DB621 /* Pods-UDSChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDSChallenge.release.xcconfig"; path = "Target Support Files/Pods-UDSChallenge/Pods-UDSChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +150,7 @@
 		9ABA641623AFB41E00C08990 /* UDSChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				9ABA646723B0B39900C08990 /* View */,
 				9ABA644223AFC14900C08990 /* Model */,
 				9ABA643F23AFBCFF00C08990 /* ViewModel */,
 				9ABA641723AFB41E00C08990 /* AppDelegate.swift */,
@@ -173,6 +182,7 @@
 				9ABA644723AFEC8700C08990 /* SignUp.storyboard */,
 				9ABA645723B0717C00C08990 /* RulingCreation.storyboard */,
 				9ABA645F23B08BB000C08990 /* Profile.storyboard */,
+				9ABA646523B0921300C08990 /* RulingVisualizer.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -186,6 +196,7 @@
 				9ABA645323B067D300C08990 /* AskForPasswordViewController.swift */,
 				9ABA645923B0739E00C08990 /* RulingCreationViewController.swift */,
 				9ABA646123B08D1300C08990 /* ProfileViewController.swift */,
+				9ABA646A23B0B4B200C08990 /* RulingVisualizerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -197,6 +208,7 @@
 				9ABA644D23AFF4A100C08990 /* SignUpViewModel.swift */,
 				9ABA644F23AFF6C000C08990 /* BaseViewModel.swift */,
 				9ABA645523B067F100C08990 /* AskForPasswordViewModel.swift */,
+				9ABA646C23B0B53C00C08990 /* RulingVisualizerViewModel.swift */,
 				9ABA645B23B07C0600C08990 /* RulingCreationViewModel.swift */,
 				9ABA646323B08D4300C08990 /* ProfileViewModel.swift */,
 			);
@@ -212,6 +224,14 @@
 				9ABA644923AFEE4500C08990 /* NetworkMock.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9ABA646723B0B39900C08990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9ABA646823B0B3B100C08990 /* RulingTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FE73704ECEA15281B1A5F2E2 /* Frameworks */ = {
@@ -309,6 +329,7 @@
 			files = (
 				9ABA645823B0717C00C08990 /* RulingCreation.storyboard in Resources */,
 				9ABA643B23AFB7A500C08990 /* Login.storyboard in Resources */,
+				9ABA646623B0921300C08990 /* RulingVisualizer.storyboard in Resources */,
 				9ABA646023B08BB000C08990 /* Profile.storyboard in Resources */,
 				9ABA645223B0492000C08990 /* AskForPassword.storyboard in Resources */,
 				9ABA642423AFB42200C08990 /* LaunchScreen.storyboard in Resources */,
@@ -403,7 +424,9 @@
 				9ABA641C23AFB41E00C08990 /* ViewController.swift in Sources */,
 				9ABA645423B067D300C08990 /* AskForPasswordViewController.swift in Sources */,
 				9ABA644623AFE1C800C08990 /* UserManager.swift in Sources */,
+				9ABA646D23B0B53C00C08990 /* RulingVisualizerViewModel.swift in Sources */,
 				9ABA646423B08D4300C08990 /* ProfileViewModel.swift in Sources */,
+				9ABA646923B0B3B100C08990 /* RulingTableViewCell.swift in Sources */,
 				9ABA646223B08D1300C08990 /* ProfileViewController.swift in Sources */,
 				9ABA645C23B07C0600C08990 /* RulingCreationViewModel.swift in Sources */,
 				9ABA645E23B0842F00C08990 /* Ruling.swift in Sources */,
@@ -412,6 +435,7 @@
 				9ABA641823AFB41E00C08990 /* AppDelegate.swift in Sources */,
 				9ABA644123AFBD2200C08990 /* LoginViewModel.swift in Sources */,
 				9ABA644C23AFF3F400C08990 /* SignUpViewController.swift in Sources */,
+				9ABA646B23B0B4B200C08990 /* RulingVisualizerViewController.swift in Sources */,
 				9ABA644423AFC15100C08990 /* Router.swift in Sources */,
 				9ABA641A23AFB41E00C08990 /* SceneDelegate.swift in Sources */,
 			);
